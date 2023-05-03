@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block title %}
+History
+{% endblock %}
+{% block main %}
+<table class="table">
+    <tr class="th-rows">
+        <th>
+            Username
+        </th>
+        <th>
+            Action
+        </th>
+        <th>
+            Changes
+        </th>
+        <th>
+            Time
+        </th>
+    </tr>
+    {% for change in history %}
+    <tr>
+        <td> {{ change.user_id }}</td>
+        <td> {{ change.action }}</td>
+        <td> {{ change.changes }}</td>
+        <td> {{ change.time }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Login
+{% endblock %}
+
+{% block main %}
+    {% if not shares %}
+    <form action="/login" method="post">
+        <div class="title"><h2>Log In</h2></div>
+        <div class="form-group">
+        <input autocomplete="off" autofocus class="request-info" name="username" placeholder="Username" type="text">
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" class="request-info" name="password" placeholder="Password" type="password">
+        </div class>
+        <div class="form-group">
+            <button class="btn btn-primary" type="submit">Log In</button>
+        </div>
+    </form>
+    {% endif %}
+    <p class="message">{{ message }}</p>
+    <p class="success-message">{{ message1 }}</p>
+{% endblock %}

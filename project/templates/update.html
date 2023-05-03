@@ -1,0 +1,74 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Update
+{% endblock %}
+
+{% block main %}
+<p class="message">{{ message }}</p>
+<p class="success-message">{{ message1 }}</p>
+<table class="table" style="background-color: #EDEEEE">
+    <tr>
+        <th>Selector</th>
+        <td class="form-group">
+            <form action="/update" method="post">
+                <select name="options">
+                    <option disable selected value="" placeholder="Product"></option>
+                    {% for product in storage %}
+                    <option value="{{ product.product_id }}">ID: {{ product.product_id }} - {{ product.name }}</option>
+                    {% endfor %}
+                </select>
+        </td>
+    </tr>
+    <tr>
+        <th>Name</th>
+        <td>
+            <input autofocus="off" name="name"  placeholder="Name of the product" type="text">
+        </td>
+    </tr>
+    <tr>
+        <th>Units</th>
+        <td>
+            <input autofocus="off" name="units" autofocus placeholder="Units" type="number" min="1">
+        </td>
+    </tr>
+    <tr>
+        <th>Units of measure</th>
+        <td>
+            <input autofocus="off" name="measure_unit"  placeholder="Units of measure" type="text">
+        </td>
+    </tr>
+    <tr>
+        <th>Price</th>
+        <td>
+            <input autofocus="off" name="price"  placeholder="Price" type="text">
+        </td>
+    </tr>
+    <tr>
+        <th>Comment</th>
+        <td>
+            <input autofocus="off" name="comment"  placeholder="Comment" type="text">
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <button class="btn btn-primary" onclick="return confirm('Are you sure?');">Update</button>
+            </form>
+        </td>
+    </tr>
+</table>
+<script>
+    let input = document.querySelector('select');
+    input.addEventListener('click', function() {
+        $.get('/queryid?q=' + input.value, function(storage) {
+            let html  = storage[0].name + " - $" + storage[0].price + " - " +
+            storage[0].units + " " + storage[0].measure_unit + " - " + storage[0].comments
+            document.querySelector('.query').innerHTML = html;
+        });
+    });
+</script>
+<p class="query"></p>
+{% endblock %}
+    </body>
+</html>

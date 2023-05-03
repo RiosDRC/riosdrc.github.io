@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+<h4 class="greeting">
+    Hello, {% if session.clearance == "admin" %}Admin{% endif %} {{ session.name }}!
+</h4>
+<table class="table">
+    <tr class="trows">
+        <form action="/", method="post">
+        <td class="columns">
+            <input autocomplete="off" class="request-info" name="product" placeholder="Brand: Product" type="text">
+        </td>
+        <td class="columns">
+            <input style="width: 37%" autocomplete="off" class="request-info" name="units" placeholder="No. of units" type="number" min="1">
+            <input style="width: 53%" autocomplete="off" class="request-info" name="measure_unit" placeholder="Unit of measure" type="text">
+        </td>
+        <td class="columns">
+            <input style="width: 53%" autocomplete="off" class="request-info" name="price" placeholder="Price" type="number" min="1">
+        </td>
+        <td class="columns">
+            <input autocomplete="off" class="request-info" name="comment" placeholder="Comment" type="text">
+        </td>
+        <td><button class="btn btn-primary" onclick="return confirm('Are you sure?');">Add</button>
+        </td>
+        </form>
+    </tr>
+    <tr class="th-rows">
+        <th class="columns">ID</th>
+        <th class="columns">Brand: Product</th>
+        <th class="columns">Number of units</th>
+        <th class="columns">Price</th>
+        <th class="columns">Comments</th>
+    </tr>
+    {% for product in storage %}
+    <tr class="trows" method="post">
+        <td class="columns" name="id">{{ product.product_id }}</td>
+        <td class="columns">{{ product.name }}</td>
+        <td class="columns">{{ product.units }}{% if not product.measure_unit == None %} {{ product.measure_unit }}{% endif %}</td>
+        <td class="columns">{% if product.price != None %}${{ product.price }}{% endif %}</td>
+        <td class="columns">{% if product.comments != None %}{{ product.comments }}{% endif %}</td>
+    </tr>
+    {% endfor %}
+</table>
+<table class="table" style="background-color: #EDEEEE">
+    <tr>
+        <form action="/delete", method="post">
+            <td></td>
+            <td>
+                <input autocomplete="off" class="request-info" name="product_id" placeholder="ID of the product" type="number" min="1">
+                <button class="btn btn-secondary" onclick="return confirm('Are you sure that you want to delete this item?')">Delete</button>
+            </td>
+            <td></td>
+        </form>
+    </tr>
+</table>
+<p class="message">{{ message }}</p>
+<p class="success-message">{{ message1 }}</p>
+{% endblock %}

@@ -1,0 +1,88 @@
+.logo {
+    top: 1%;
+    left: 5px;
+    position: absolute;
+    max-height: 6%;
+}
+.logo1 {
+    max-width: 7%
+}
+nav .navbar-brand .gray {
+    color: #FAFAFA;
+}
+nav .navbar-brand .blue {
+    color: blue;
+}
+
+nav .navbar-brand .red {
+    color: red;
+}
+
+nav .navbar-brand .green {
+    color: green;
+}
+
+nav .navbar-brand .brown {
+    color: brown;
+}
+nav {
+    padding-left: 10%;
+}
+
+main {
+    overflow-x: auto;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    color: #044A61;
+    padding-top: 3px;
+    Padding-bottom: 20px;
+}
+
+.form-group {
+    text-align: center;
+    padding-bottom: 3px;
+}
+
+.message {
+    text-align: center;
+    color: red;
+    font-size: 18px;
+}
+.success-message {
+    text-align: center;
+    color: green;
+    font-size: 18px;
+}
+
+.greeting {
+    color: #1691EC;
+}
+
+.th-rows {
+    background-color: #8ACAF9;
+}
+.columns {
+    column-width: auto;
+    column-gap: 4px;
+}
+.table {
+    background-color: #E3F3FF;
+    width: auto;
+}
+.request-info {
+    text-align: center;
+    width: auto;
+}
+main {
+    background: #EDEEEE;
+}
+.query {
+    color: blue;
+}
+#search:focus {
+    border: 3px solid #555;
+}
+
