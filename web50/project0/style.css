@@ -1,0 +1,50 @@
+.title {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(79, 0, 16);
+}
+
+.title2 {
+    text-align: left;
+    font-size: 20px;
+    color: rgb(120, 1, 1);
+    margin-left: 40px;
+}
+
+.google{
+    border-radius: 5px;
+    padding: 7px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+button, .button {
+    /* CSS styles for all buttons */
+    font-size: 16px;
+    padding: 8px 16px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+.button:hover {
+    background-color: #005f80;
+  }
+
+button:hover {
+    background-color: #005f80;
+  }
+
+a {
+    color: black;
+    font: Roboto,Arial,sans-serif;
+    text-decoration: none;
+    margin: 5px;
+}
+
+a:hover{
+    text-decoration-line: underline;
+}
