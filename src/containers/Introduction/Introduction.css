@@ -1,0 +1,29 @@
+.app__intro {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app__intro h1 {
+    font-size: 62px;
+}
+
+.app__intro-content {
+    margin-top: 2rem;
+    max-width: 80%;
+    padding: 10px 20px;
+    background: var(--white-bg);
+    border-radius: 40px;
+    border: 1px solid var(--white-border);
+}
+
+@media (max-width: 650px) {
+    .app__intro h1 {
+        font-size: 40px;
+    }
+
+    .app__intro-content {
+        max-width: 98%;
+    }
+}

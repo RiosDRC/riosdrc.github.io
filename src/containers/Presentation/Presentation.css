@@ -1,0 +1,59 @@
+.app__presentation {
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-inline: auto;
+    gap: 10rem;
+}
+
+.app__presentation-left {
+    padding: 0 0 2rem 2rem;
+    flex: 1.5;
+    border-bottom: 2px solid #4431BA;
+    border-left: 2px solid #4431BA;
+    border-bottom-left-radius: 40px;
+}
+
+.app__presentation-left h2 {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.app__presentation-left p {
+    text-align: justify;
+    font-size: 18px;
+    color: #CFCFCF;
+}
+
+.app__presentation-right {
+    flex: 1;
+}
+
+.app__presentation-right img {
+    z-index: 5;
+    width: 80%;
+    border-radius: 30px;
+    border: 1px solid var(--white-border);
+}
+
+.app__presentation .presentation_gradient {
+    z-index: -1;
+    position: absolute;
+    height: 500px;
+    width: 400px;
+    background: linear-gradient(90deg, rgb(215, 215, 215) 0%, rgb(73, 112, 255) 100%);
+    filter: blur(450px);
+    top: 15rem;
+    right: 15rem;
+}
+
+
+@media (max-width: 950px) {
+    .app__presentation {
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+}

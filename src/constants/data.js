@@ -1,29 +1,34 @@
+import shoes from "../assets/img/shoes.jpg"
+import gpt3 from "../assets/img/gpt3.jpg"
+import restaurant from "../assets/img/restaurant.jpg"
+import bank from "../assets/img/bank.jpg"
+
 const projects = [
     {
         id: 1,
         title: "Shoes Store",
-        img: "./img/shoes.jpg",
+        img: shoes,
         url: "https://riosdrc.github.io/shoes/",
         desc: ""
     },
     {
         id: 2,
         title: "GPT-3",
-        img: "./img/gpt3.jpg",
+        img: gpt3,
         url: "https://riosdrc.github.io/gpt3/",
         desc: ""
     },
     {
         id: 3,
         title: "Restaurant",
-        img: "./img/restaurant.jpg",
+        img: restaurant,
         url: "https://riosdrc.github.io/restaurant/",
         desc: ""
     },
     {
         id: 4,
         title: "Bank Modern App",
-        img: "./img/bank.jpg",
+        img: bank,
         url: "https://riosdrc.github.io/bank_modern_app/",
         desc: ""
     }
