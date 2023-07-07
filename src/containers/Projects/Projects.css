@@ -1,0 +1,60 @@
+.app__projects {
+    margin-top: 7rem;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.app__projects h2 {
+    font-size: 50px;
+}
+
+.app__projects-cardBox {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.app__projects-cardBox_card {
+    flex: 40%;
+    min-width: 500px;
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app__projects-cardBox_card img {
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.app__projects-cardBox_card img:hover {
+    transform: translate(0, 1px);
+}
+
+.app__projects-cardBox_card a button {
+    margin-top: 1.5rem;
+    background: #3580EF;
+    padding: 0.5rem 2rem;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.app__projects-cardBox_card a button:hover {
+    background: #73a5f0;
+}
+
+@media (max-width: 550px) {
+    .app__projects-cardBox_card {
+        min-width: 90%
+    }    
+}

@@ -16,7 +16,7 @@ const Presentation = () => {
         success of the team.</p>
       </div>
 
-      <div className="app__presentation-right">
+      <div className="app__presentation-right  slide-in-elliptic-bottom-fwd">
         <img src={Picture} alt="Profile_img" />
         <div className='presentation_gradient' />
       </div>

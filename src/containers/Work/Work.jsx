@@ -8,9 +8,10 @@ const Work = () => {
     <div className='app__workHistory' id='work'>
         <h2>Work History</h2>
         <div className="app__workHistory-container">
-            <div className="app__workHistory-container_img">
+            <div className="app__workHistory-container_img  slide-in-elliptic-bottom-fwd">
                 <img src={circle} alt=''/>
                 <MdWorkHistory />
+                <div className='app__workHistory-container_gradient'/>
             </div>
             <div className="app__workHistory-container_text">
                 <h3>Bilingual Customer Service Representative</h3>
