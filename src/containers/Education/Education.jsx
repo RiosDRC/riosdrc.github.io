@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Education.css"
 import { education } from '../../constants/data'
+import { BiSolidBook } from "react-icons/bi"
 
 const Education = () => {
   return (
@@ -12,8 +13,10 @@ const Education = () => {
             <h3>{item.inst}</h3>
             <h4>{item.year}</h4>
             <p>{item.area}</p>
+            <BiSolidBook />
           </div>
         ))}
+        <div className="app__education-radient"/>
       </div>
     </div>
   )

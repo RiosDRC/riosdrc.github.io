@@ -4,6 +4,7 @@ import {
   Education,
   Introduction,
   Presentation,
+  Skills,
   Work
 } from "./containers"
 
@@ -15,6 +16,7 @@ function App() {
       <Presentation />
       <Work />
       <Education />
+      <Skills />
     </>
   )
 }

@@ -1,8 +1,11 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  min-width: 100%;
+  display: flex;flex-direction: column;
+  align-items: center;
+  margin-inline: auto;
+  padding-inline: auto;
+  overflow: hidden;
+
 }
 
 .slide-in-elliptic-bottom-fwd {
@@ -41,10 +44,4 @@
             transform-origin: 50% -1400px;
     opacity: 1;
   }
-}
-
-@media (max-width: 950px) {
-        #root {
-                padding: 5px;
-        }
 }

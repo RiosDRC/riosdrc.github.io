@@ -21,8 +21,16 @@
     gap: 10rem;
 }
 
-.app__workHistory-container-img {
+.app__workHistory-container_img {
     flex: 1;
+    position: relative;
+}
+
+.app__workHistory-container_img svg {
+    position: absolute;
+    font-size: 50px;
+    top: 7rem;
+    left: 7rem;
 }
 
 .app__workHistory-container_text {
@@ -39,11 +47,14 @@
         flex-direction: column;
         gap: 0;
     }
-
+    
     .app__workHistory {
         width: 95%;
         margin-inline: 0;
         padding: 0;
+        align-items: center;
+        text-align: center;
+        margin-inline: auto;
     }
 
     .app__workHistory-container_text {

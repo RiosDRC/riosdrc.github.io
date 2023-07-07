@@ -30,6 +30,7 @@
 
 .app__presentation-right {
     flex: 1;
+    position: relative;
 }
 
 .app__presentation-right img {
@@ -42,12 +43,13 @@
 .app__presentation .presentation_gradient {
     z-index: -1;
     position: absolute;
-    height: 500px;
+    height: 400px;
     width: 400px;
+    border-radius: 50%;
     background: linear-gradient(90deg, rgb(215, 215, 215) 0%, rgb(73, 112, 255) 100%);
-    filter: blur(450px);
-    top: 15rem;
-    right: 15rem;
+    filter: blur(400px);
+    top: -5rem;
+    right: 2rem;
 }
 
 
@@ -55,5 +57,29 @@
     .app__presentation {
         flex-direction: column-reverse;
         gap: 1rem;
+    }
+
+    .app__presentation-right {
+        flex: 1;
+        padding: 0 5%;
+    }
+
+    .app__presentation-right img {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .app__presentation-left {
+        padding: 0 0 0 1rem;
+        border-left: none;
+    }
+
+    .app__presentation-left h2 {
+        text-align: center;
+        font-size: 30px;
+    }
+    .app__presentation .presentation_gradient {
+        top: -1rem;
+        right: -2rem;
     }
 }

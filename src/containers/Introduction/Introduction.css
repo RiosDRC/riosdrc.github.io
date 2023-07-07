@@ -11,16 +11,17 @@
 
 .app__intro-content {
     margin-top: 2rem;
-    max-width: 80%;
+    max-width: 900px;
     padding: 10px 20px;
     background: var(--white-bg);
     border-radius: 40px;
     border: 1px solid var(--white-border);
 }
 
-@media (max-width: 650px) {
+@media (max-width: 950px) {
     .app__intro h1 {
         font-size: 40px;
+        text-align: center;
     }
 
     .app__intro-content {

@@ -6,7 +6,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
+
 
 .app__education h2 {
     font-size: 50px;
@@ -17,13 +19,12 @@
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-around;
-
     gap: 40px;
 }
 
 .app__education-boxCard_card {
     max-width: 400px;
-    min-width: 250px;
+    min-width: 200px;
     flex: 35%;
     display: flex;
     flex-direction: column;
@@ -33,6 +34,20 @@
     background: var(--white-bg);
     border-radius: 40px;
     border: 1px solid var(--white-border);
+    z-index: 5;
+    position: relative;
+}
+
+.app__education-boxCard_card::after {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background: #5036b9a0;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    border-radius: 50%;
+    border: 1px solid var(--white-border);
 }
 
 .app__education-boxCard_card h3 {
@@ -41,4 +56,28 @@
 
 .app__education-boxCard_card h4 {
     margin: 0 0 5px 0;
+}
+
+.app__education-boxCard_card p {
+    color: #A1A1A1;
+}
+
+.app__education-boxCard_card svg {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 30px;
+    color: #FFF;
+    z-index: 6;
+}
+
+.app__education .app__education-radient {
+    position: absolute;
+    background: linear-gradient(90deg, rgba(185, 113, 61, 0.166) 0%, rgba(184, 186, 49, 0.664) 100%);
+    filter: blur(700px);
+    height: 520px;
+    width: 520px;
+    z-index: -1;
+    border-radius: 50%;
+    top: -20px;
 }

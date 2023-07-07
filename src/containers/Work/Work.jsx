@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Work.css"
 import circle from "../../assets/circle.svg"
+import { MdWorkHistory } from "react-icons/md" 
 
 const Work = () => {
   return (
@@ -9,6 +10,7 @@ const Work = () => {
         <div className="app__workHistory-container">
             <div className="app__workHistory-container_img">
                 <img src={circle} alt=''/>
+                <MdWorkHistory />
             </div>
             <div className="app__workHistory-container_text">
                 <h3>Bilingual Customer Service Representative</h3>
