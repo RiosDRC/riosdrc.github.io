@@ -2,6 +2,7 @@ import shoes from "../assets/img/shoes.jpg"
 import gpt3 from "../assets/img/gpt3.jpg"
 import restaurant from "../assets/img/restaurant.jpg"
 import bank from "../assets/img/bank.jpg"
+import blog from "../assets/img/blog.jpg"
 
 const projects = [
     {
@@ -30,6 +31,13 @@ const projects = [
         title: "Bank Modern App",
         img: bank,
         url: "https://riosdrc.github.io/bank_modern_app/",
+        desc: ""
+    },
+    {
+        id: 5,
+        title: "Rios Blog",
+        img: blog,
+        url: "https://riosdrc.github.io/rios-blog-client/",
         desc: ""
     }
 ];
