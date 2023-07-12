@@ -1,5 +1,5 @@
 .app__presentation {
-    padding-top: 10rem;
+    margin-top: 10rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -55,6 +55,7 @@
 
 @media (max-width: 950px) {
     .app__presentation {
+        margin-top: 5rem;
         flex-direction: column-reverse;
         gap: 1rem;
     }

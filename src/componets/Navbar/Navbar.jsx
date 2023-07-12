@@ -31,7 +31,7 @@ const Navbar = () => {
                 ? <CgMore onClick={()=>setToggle(prev=>!prev)}/>
                 : <CgMoreVertical onClick={()=>setToggle(prev=>!prev)}/>
             }
-            {toggle && <div className="toggleMenu_links"><Links /></div>}
+            {toggle && <div className="toggleMenu_links slide-in-blurred-br"><Links /></div>}
         </div>
     </div>
   )

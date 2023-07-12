@@ -20,8 +20,9 @@
 
 .app__projects-cardBox_card {
     flex: 40%;
+    max-width: 50%;
     min-width: 500px;
-    margin: 3rem;
+    margin: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
