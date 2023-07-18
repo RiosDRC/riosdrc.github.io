@@ -3,6 +3,7 @@ import gpt3 from "../assets/img/gpt3.jpg"
 import restaurant from "../assets/img/restaurant.jpg"
 import bank from "../assets/img/bank.jpg"
 import blog from "../assets/img/blog.jpg"
+import rent from "../assets/img/rent-a-car.jpg"
 
 const projects = [
     {
@@ -38,6 +39,13 @@ const projects = [
         title: "Rios Blog",
         img: blog,
         url: "https://riosdrc.github.io/rios-blog-client/",
+        desc: ""
+    },
+    {
+        id: 6,
+        title: "Rent-a-Car",
+        img: rent,
+        url: "https://riosdrc.github.io/rent-a-car",
         desc: ""
     }
 ];
