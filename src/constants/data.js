@@ -4,7 +4,7 @@ import restaurant from "../assets/img/restaurant.jpg"
 import bank from "../assets/img/bank.jpg"
 import blog from "../assets/img/blog.jpg"
 import rent from "../assets/img/rent-a-car.jpg"
-import realState from "../assets/img/real_statejpg"
+import realState from "../assets/img/real_state.jpg"
 
 const projects = [
     {
