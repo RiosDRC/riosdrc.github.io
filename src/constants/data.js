@@ -4,6 +4,7 @@ import restaurant from "../assets/img/restaurant.jpg"
 import bank from "../assets/img/bank.jpg"
 import blog from "../assets/img/blog.jpg"
 import rent from "../assets/img/rent-a-car.jpg"
+import realState from "../assets/img/real_statejpg"
 
 const projects = [
     {
@@ -46,6 +47,13 @@ const projects = [
         title: "Rent-a-Car",
         img: rent,
         url: "https://riosdrc.github.io/rent-a-car",
+        desc: ""
+    },
+    {
+        id: 7,
+        title: "Real_state",
+        img: realState,
+        url: "https://riosdrc.github.io/real_state",
         desc: ""
     }
 ];
