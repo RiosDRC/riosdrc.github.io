@@ -1,12 +1,10 @@
 import './App.css'
 import Navbar from './componets/Navbar/Navbar'
 import {
-  Education,
   Introduction,
   Presentation,
   Projects,
   Skills,
-  Work
 } from "./containers"
 
 function App() {
@@ -15,8 +13,6 @@ function App() {
       <Navbar />
       <Introduction />
       <Presentation />
-      <Work />
-      <Education />
       <Skills />
       <Projects />
     </>

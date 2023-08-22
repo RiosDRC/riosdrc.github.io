@@ -10,7 +10,10 @@ const Projects = () => {
             {projects.map(project=>(
                 <div className="app__projects-cardBox_card" key={project.id}>
                     <h1>{project.title}</h1>
-                    <img src={project.img} alt="" />
+                    <a href={project.url}>
+                        <img src={project.img} alt="" />
+                    </a>
+                    <p>{project.desc}</p>
                     <a href={project.url}>
                         <button>Visit</button>
                     </a>

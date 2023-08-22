@@ -14,7 +14,7 @@
 .app__projects-cardBox {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
 }
 
@@ -23,19 +23,31 @@
     max-width: 50%;
     min-width: 500px;
     margin: 1rem;
+    min-height: 780px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    position: relative;
 }
 
 .app__projects-cardBox_card img {
-    width: 90%;
+    width: 95%;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
+.app__projects-cardBox_card a {
+    text-align: center;
+}
+
 .app__projects-cardBox_card img:hover {
     transform: translate(0, 1px);
+}
+
+.app__projects-cardBox_card p {
+    max-width: 90%;
+    text-align: justify;
 }
 
 .app__projects-cardBox_card a button {
