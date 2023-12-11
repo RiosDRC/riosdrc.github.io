@@ -8,7 +8,7 @@ const projects = [
         id: 1,
         title: "Rios Blog",
         img: blog,
-        url: "https://riosdrc.github.io/rios-blog-client/",
+        url: "https://riosdrc.github.io/rios-blog/",
         desc: "Explore my full-stack blog project developed with Node.js and React.js. The backend, powered by MySQLite, is hosted on Heroku. \
         Seamless image management is achieved through Dropbox, with new image integration facilitated by a Dropbox API. This project \
         highlights my prowess in API utilization and backend understanding. The user interface strikes a balance: a Bootstrap navbar for \
