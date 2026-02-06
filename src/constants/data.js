@@ -2,10 +2,18 @@ import shoes from "../assets/img/shoes.jpg"
 import restaurant from "../assets/img/restaurant.jpg"
 import blog from "../assets/img/blog.jpg"
 import realState from "../assets/img/real_state.jpg"
+import bank from "../assets/img/bank.jpg"
 
 const projects = [
     {
         id: 1,
+        title: "Modern Bank App",
+        img: bank,
+        url: "https://riosdrc.github.io/bank_modern_app",
+        desc: "This website presents the main page design of a banking application built with modern UI elements. The project was \ developed using React.js and styled with Tailwind CSS. While the application focuses on UI rather than complex functionality, \ it demonstrates the flexibility and scalability of modern front-end technologies in creating clean and responsive designs."
+    },
+    {
+        id: 2,
         title: "Rios Blog",
         img: blog,
         url: "https://riosdrc.github.io/rios-blog-client/",
@@ -15,7 +23,7 @@ const projects = [
         streamlined navigation and custom CSS for design cohesiveness. User: test2, Password: test2"
     },
     {
-        id: 2,
+        id: 3,
         title: "Restaurant",
         img: restaurant,
         url: "https://riosdrc.github.io/restaurant/",
@@ -26,7 +34,7 @@ const projects = [
         testament to my frontend skills, showcasing both thoughtful design and interactive elements."
     },
     {
-        id: 3,
+        id: 4,
         title: "Shoes Store",
         img: shoes,
         url: "https://riosdrc.github.io/shoes/",
@@ -38,7 +46,7 @@ const projects = [
         user-centric design."
     },
     {
-        id: 4,
+        id: 5,
         title: "Real State",
         img: realState,
         url: "https://riosdrc.github.io/real_state",
