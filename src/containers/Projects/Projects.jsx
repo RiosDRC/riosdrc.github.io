@@ -6,6 +6,7 @@ const Projects = () => {
   return (
     <div className="app__projects" id='projects'>
         <h2>Meine Projekte</h2>
+        <p>Alle Designs der Projekte wurden aus öffentlichen Quellen übernommen*</p>
         <div className="app__projects-cardBox">
             {projects.filter(project => project.title !== 'Rios Blog').map(project=>(
                 <div className="app__projects-cardBox_card" key={project.id}>
