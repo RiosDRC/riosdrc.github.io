@@ -21,7 +21,7 @@ const Card = ({ title, icon, img }) => (
 const Skills = () => {
   return (
     <div className="app__skills" id='skills'>
-        <h2>Skills</h2>
+        <h2>Meine Fähigkeiten</h2>
         <div className="app__skills-cardBox">
             <Card title="JavaScript" icon={ <SiJavascript color='rgb(232, 241, 59)'/>}/>
             <Card title="CSS" icon={ <SiCss3 color='rgb(0, 110, 255)'/>}/>

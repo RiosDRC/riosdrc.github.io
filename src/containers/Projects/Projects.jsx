@@ -5,7 +5,7 @@ import { projects } from '../../constants/data'
 const Projects = () => {
   return (
     <div className="app__projects" id='projects'>
-        <h2>Projects</h2>
+        <h2>Meine Projekte</h2>
         <div className="app__projects-cardBox">
             {projects.filter(project => project.title !== 'Rios Blog').map(project=>(
                 <div className="app__projects-cardBox_card" key={project.id}>
@@ -15,7 +15,7 @@ const Projects = () => {
                     </a>
                     <p>{project.desc}</p>
                     <a href={project.url}>
-                        <button>Visit</button>
+                        <button>Zur Website</button>
                     </a>
                 </div>
             ))}

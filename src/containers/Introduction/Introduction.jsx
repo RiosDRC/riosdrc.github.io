@@ -4,7 +4,7 @@ import "./Introduction.css"
 const Introduction = () => {
   return (
     <div className="app__intro" id='home'>
-        <h1>Welcome to my WebPage</h1>
+        <h1>Willkommen bei meiner Webseite</h1>
 
         {/* <div className="app__intro-content">
             <p>This webpage was designed as a landing page to host front-end projects,

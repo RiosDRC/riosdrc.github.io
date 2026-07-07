@@ -5,9 +5,9 @@ import "./Navbar.css"
 
 const Links = () => (
     <>
-        <a href="#home">Home</a>
-        <a href="#skills">skills</a>
-        <a href="#projects">Projects</a>
+        <a href="#home">Startseite</a>
+        <a href="#skills">Fähigkeiten</a>
+        <a href="#projects">Projekte</a>
     </>
 );
 
